@@ -1,0 +1,142 @@
+.App {
+  margin: 0;
+  padding: 0;
+  background-color:#efefef;
+  text-align: center;
+  height: 100%;
+  min-height: 800px;
+}
+ul{
+  padding-top: 10px;
+  margin: 0;
+  margin-right: 20px;
+  list-style-type: none;
+  counter-reset: my-counter;
+}
+li{
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px lightgrey;
+}
+
+button{
+  width: 100%;
+  border-radius: 15px;
+  border-style: none;
+  margin-top: 15px;
+}
+.countries:before{
+  margin: 0 auto;
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  margin-right: 30px;
+}
+.countries{
+  width: 20px;
+  padding: 20px;
+  border-right: 1px solid;
+}
+li span{
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.flexCountry{
+  display: flex;
+}
+.counter{
+  width: 20px;
+  padding: 20px;
+  border-right: 1px solid;
+}
+.TotalConfirmed{
+  text-align: right;
+  width: 300px;
+  padding: 20px;
+  border-left: 1px solid;
+}
+.List{
+  color: white;
+  background-color: #205aff;
+}
+.logo{
+  display: flex;
+}
+.message-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.message {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    width: 300px;
+    font-weight: normal;
+    border-radius: 16px;
+}
+.message button{
+  height: 30px;
+  width: 50px;
+  background-color: #205aff;
+}
+.statistics{
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+}
+input{
+  height: 40px;
+  background-color: white;
+  border-style: none;
+  border-radius: 8px;
+  margin-top: 60px;
+
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+
+}
+.title h1{
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 45px;
+}
+  @media screen and (max-width: 800px){
+    .TotalConfirmed{
+      width: 75px;
+      margin: 0;
+    }
+    li span{
+      padding-left: 0;
+      font-size: 15px;
+    }
+    .title h1 {
+      font-size: 20px;
+      margin-top: 25px;
+    }
+    .logo img{
+      width: 75px;
+      height: 75px;
+    }
+    input{
+      height: 20px;
+      width: 80px;
+      margin-top: 30px;
+    }
+  }
